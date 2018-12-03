@@ -17,6 +17,8 @@ import { HttpClientModule }    from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { TableComponent } from './table/table.component';
+import { PlayComponent } from './play/play.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
     PlayersComponent,
     PlayerDetailComponent,
     LoginComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    TableComponent,
+    PlayComponent
   ],
   imports: [
     BrowserModule,
