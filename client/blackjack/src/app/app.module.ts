@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFireModule } from '@angular/fire';
+import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from './../environments/environment';
@@ -15,7 +15,7 @@ import { PlayerDetailComponent } from './player-detail/player-detail.component';
 
 import { HttpClientModule }    from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
-
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { LoginComponent } from './login/login.component';
     RouterModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+  AngularFirestoreModule // imports firebase/firestore, only needed for database features
   ],
   providers: [],
   bootstrap: [AppComponent]
