@@ -1,9 +1,16 @@
-<div *ngIf="afAuth.authState | async as authUser; else loginTemplate">
+<body>
+  <div class="bg2">
+    <h1>Welcome To Cottages Casino!</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-  <h1>{{ authUser.displayName}}</h1>
-  <button (click) ="logout()">Logout </button>
+    <div *ngIf="afAuth.authState | async as authUser; else loginTemplate">
+      <h1>{{ authUser.displayName}}</h1>
+      <button (click) ="logout()">Logout </button>
+    </div>
 
-</div>
-<ng-template #loginTemplate>
-  <button (click) ="login()">Login with Google </button>
-  </ng-template>
+    <ng-template #loginTemplate>
+      <button (click) ="login()">Login with Google </button>
+    </ng-template>
+
+  </div>
+</body>
