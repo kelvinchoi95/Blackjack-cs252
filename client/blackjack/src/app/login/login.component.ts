@@ -14,7 +14,8 @@ export class LoginComponent implements OnInit {
   /*constructor(private router: Router, zone: NgZone, private auth: AuthService) {
     window['onSignIn'] = (user) => zone.run(() => this.onSignIn(user));
   }*/
-  constructor(public afAuth: AngularFireAuth) { }
+  constructor(public afAuth: AngularFireAuth) {
+   }
     login() {
       this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
 

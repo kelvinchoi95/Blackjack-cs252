@@ -12,7 +12,8 @@ import * as firebase from 'firebase/app';
 })
 export class AppComponent {
   title = 'blackjack';
-  constructor(public afAuth: AngularFireAuth) { }
+  constructor(public afAuth: AngularFireAuth) {
+   }
     login() {
       this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
 
