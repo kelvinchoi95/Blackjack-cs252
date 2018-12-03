@@ -16,13 +16,15 @@ import { PlayerDetailComponent } from './player-detail/player-detail.component';
 import { HttpClientModule }    from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayersComponent,
     PlayerDetailComponent,
-    LoginComponent
+    LoginComponent,
+    MainMenuComponent
   ],
   imports: [
     BrowserModule,
