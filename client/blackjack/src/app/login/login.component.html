@@ -1,13 +1,5 @@
 
 <div class="container">
   <img src="bg2.jpg" alt="Cinque Terre" width="1000" height="300">
-
-  <div *ngIf="afAuth.authState | async as authUser; else loginTemplate">
-      <div class="topleft"> <h1>{{ authUser.displayName}}</h1> </div>
-      <div class="bottomleft"> <button (click) ="logout()">Logout </button> </div>
-  </div>
-
-  <ng-template #loginTemplate>
-    <div class="bottomleft"> <button (click) ="login()">Login with Google </button> </div>
-  </ng-template>
-</div>
+  <div class="bottomleft"> <button (click) ="logout()">Logout </button> </div>
+  <div class="bottomleft"> <button (click) ="login()">Login with Google </button> </div>
