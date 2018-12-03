@@ -18,8 +18,13 @@ import { HttpClientModule }    from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+<<<<<<< HEAD
 import { AuthService } from './auth.service';
 import { TableComponent } from './table/table.component';
+=======
+import { TableComponent } from './table/table.component';
+import { PlayComponent } from './play/play.component';
+>>>>>>> 7ae94e5bb929fdc9e274ed8da6df5e43a44ba9b2
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { TableComponent } from './table/table.component';
     PlayerDetailComponent,
     LoginComponent,
     MainMenuComponent,
+<<<<<<< HEAD
     TableComponent
+=======
+    TableComponent,
+    PlayComponent
+>>>>>>> 7ae94e5bb929fdc9e274ed8da6df5e43a44ba9b2
   ],
   imports: [
     BrowserModule,
