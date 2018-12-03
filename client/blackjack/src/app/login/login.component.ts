@@ -11,19 +11,37 @@ import * as firebase from 'firebase/app';
 })
 export class LoginComponent implements OnInit {
 
+
   /*constructor(private router: Router, zone: NgZone, private auth: AuthService) {
     window['onSignIn'] = (user) => zone.run(() => this.onSignIn(user));
   }*/
-  constructor(public afAuth: AngularFireAuth) {
+  constructor(private router: Router, public afAuth: AngularFireAuth) {
    }
     login() {
-      this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+
+        this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+        this.afAuth.authState.subscribe(user => {
+          if(user) {
+            console.log('FOUNDDDDDDD');
+            this.router.navigateByUrl('/main-menu');
+          }
+          else {
+            console.log('failed');
+          }
+        })
+
+
 
     }
     logout() {
       this.afAuth.auth.signOut();
     }
+
+    loggedIn() {
+
+    }
   ngOnInit() {
+
   }
 
   /*onSignIn(googleUser) {
