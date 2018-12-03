@@ -1,16 +1,13 @@
-<body>
-  <div class="bg2">
-    <h1>Welcome To Cottages Casino!</h1>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <div *ngIf="afAuth.authState | async as authUser; else loginTemplate">
-      <h1>{{ authUser.displayName}}</h1>
-      <button (click) ="logout()">Logout </button>
-    </div>
+<div class="container">
+  <img src="bg2.jpg" alt="Cinque Terre" width="1000" height="300">
 
-    <ng-template #loginTemplate>
-      <button (click) ="login()">Login with Google </button>
-    </ng-template>
-
+  <div *ngIf="afAuth.authState | async as authUser; else loginTemplate">
+      <div class="topleft"> <h1>{{ authUser.displayName}}</h1> </div>
+      <div class="bottomleft"> <button (click) ="logout()">Logout </button> </div>
   </div>
-</body>
+
+  <ng-template #loginTemplate>
+    <div class="bottomleft"> <button (click) ="login()">Login with Google </button> </div>
+  </ng-template>
+</div>
