@@ -4,7 +4,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from './../environments/environment';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { Router } from '@angular/router';
 
 //import { AppRoutingModule } from './app-routing.module';
@@ -41,7 +41,9 @@ import { TableComponent } from './table/table.component';
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     RouterModule.forRoot([
       { path: '', redirectTo: 'login', pathMatch: 'full' },
-      { path: 'main-menu', component: MainMenuComponent, canActivate: [AuthService] }
+      { path: 'main-menu', component: MainMenuComponent },
+      { path: 'login', component: LoginComponent },
+
 
     ])
   ],
