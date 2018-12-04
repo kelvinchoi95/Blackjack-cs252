@@ -1,34 +1,29 @@
-.container {
-  position: relative;
-}
-.topleft{
-  position: absolute;
-  top: 2px;
-  left: 16px;
-  font-size: 18px;
-}
-.bottomleft{
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  font-size: 18px;
+
+
+#body {
+  height: 100%;
+  margin: 0;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.bg2 {
+  background-image: url("bg2.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-  font-family: Arial, sans-serif;
-  color: Grey;
+  color: white;
 }
 
 button {
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
   background-color: #555555; /* Black */
-  border: black;
+  border: 2px solid #555555; /* Red */
   border-radius: 4px;
   color: white;
   padding: 15px 32px;
@@ -36,9 +31,4 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
-}
-
-button:hover {
-  background-color: #f44336;
 }

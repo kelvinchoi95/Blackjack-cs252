@@ -12,10 +12,12 @@ import * as firebase from 'firebase/app';
 export class MainMenuComponent implements OnInit {
 
   constructor(private router: Router, public afAuth: AngularFireAuth) { }
-
-  slogout() {
+  logOutClicked() {
     this.afAuth.auth.signOut();
     this.router.navigateByUrl('/login');
+  }
+  playClicked() {
+    this.router.navigateByUrl('/table');
   }
 
   ngOnInit() {
