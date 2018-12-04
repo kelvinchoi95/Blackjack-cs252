@@ -1,48 +1,38 @@
-body {
-  background-image: url("table.jpg");
+.container {
+  position: relative;
+}
+.bottomcenter{
+  position: absolute;
+  bottom: 8px;
 
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-size: 18px;
 }
 
-.btn1 {
-    position: fixed;
-    bottom: 10px;
-    left: 30%;
-    /*margin-left: -104.5px; /*104.5px is half of the button's width*/
+img {
+  width: 100%;
+  height: auto;
 }
-.btn2 {
-    position: fixed;
-    bottom: 10px;
-    left: 35%;
-    /*margin-left: -104.5px; /*104.5px is half of the button's width*/
+
+h1 {
+  font-family: Arial, sans-serif;
+  color: Grey;
 }
-.btn3 {
-    position: fixed;
-    bottom: 10px;
-    left: 40%;
-    /*margin-left: -104.5px; /*104.5px is half of the button's width*/
+
+button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #008CBA; /* Black */
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
 }
-.btn4 {
-    position: fixed;
-    bottom: 10px;
-    left: 45%;
-    /*margin-left: -104.5px; /*104.5px is half of the button's width*/
-}
-.btn5 {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    /*margin-left: -104.5px; /*104.5px is half of the button's width*/
-}
-.btn6 {
-    position: fixed;
-    bottom: 10px;
-    left: 55%;
-    /*margin-left: -104.5px; /*104.5px is half of the button's width*/
+
+button:hover {
+  background-color: #f44336;
 }
