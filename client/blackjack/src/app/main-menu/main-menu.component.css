@@ -1,11 +1,45 @@
-body {
-  background-image: url("bg2.jpg");
+.container {
+  position: relative;
+}
+.topleft{
+  position: absolute;
+  top: 2px;
+  left: 16px;
+  font-size: 18px;
+}
+.bottomleft{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
 
-  /* Full height */
-  height: 100%;
+img {
+  width: 100%;
+  height: auto;
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+h1 {
+  font-family: Arial, sans-serif;
+  color: Grey;
+}
+
+button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #555555; /* Black */
+  border: black;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+
+}
+
+button:hover {
+  background-color: #f44336;
 }
