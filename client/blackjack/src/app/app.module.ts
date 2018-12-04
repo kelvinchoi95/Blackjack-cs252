@@ -21,6 +21,13 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { AuthService } from './auth.service';
 import { TableComponent } from './table/table.component';
 
+const routes: Routes = [
+  {path: 'login', component: LoginComponent},
+  {path: 'main-menu', component: MainMenuComponent},
+  {path: 'table', component: TableComponent},
+  {path: '', component: LoginComponent},
+]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,13 +46,14 @@ import { TableComponent } from './table/table.component';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
-    RouterModule.forRoot([
+    RouterModule.forRoot(routes)
+    /*RouterModule.forRoot([
       { path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: 'main-menu', component: MainMenuComponent },
       { path: 'login', component: LoginComponent },
 
 
-    ])
+    ])*/
   ],
   providers: [],
   bootstrap: [AppComponent]
